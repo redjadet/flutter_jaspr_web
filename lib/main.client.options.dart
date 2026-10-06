@@ -6,8 +6,8 @@
 
 import 'package:jaspr/client.dart';
 
-import 'package:my_jaspr_site/pages/about.dart' deferred as _about;
-import 'package:my_jaspr_site/pages/home.dart' deferred as _home;
+import 'package:flutter_jaspr_web/pages/about.dart' deferred as _about;
+import 'package:flutter_jaspr_web/pages/home.dart' deferred as _home;
 
 /// Default [ClientOptions] for use with your Jaspr project.
 ///

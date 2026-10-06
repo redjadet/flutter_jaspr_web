@@ -5,11 +5,11 @@
 // Generated with jaspr_builder
 
 import 'package:jaspr/server.dart';
-import 'package:my_jaspr_site/components/counter.dart' as _counter;
-import 'package:my_jaspr_site/components/header.dart' as _header;
-import 'package:my_jaspr_site/pages/about.dart' as _about;
-import 'package:my_jaspr_site/pages/home.dart' as _home;
-import 'package:my_jaspr_site/app.dart' as _app;
+import 'package:flutter_jaspr_web/components/counter.dart' as _counter;
+import 'package:flutter_jaspr_web/components/header.dart' as _header;
+import 'package:flutter_jaspr_web/pages/about.dart' as _about;
+import 'package:flutter_jaspr_web/pages/home.dart' as _home;
+import 'package:flutter_jaspr_web/app.dart' as _app;
 
 /// Default [ServerOptions] for use with your Jaspr project.
 ///

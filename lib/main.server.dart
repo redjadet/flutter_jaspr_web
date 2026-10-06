@@ -10,6 +10,7 @@ import 'package:jaspr/server.dart';
 
 // Imports the [App] component.
 import 'app.dart';
+import 'constants/site.dart';
 
 // This file is generated automatically by Jaspr, do not remove or edit.
 import 'main.server.options.dart';
@@ -26,7 +27,9 @@ void main() {
   // with the provided parameters and components.
   runApp(
     Document(
-      title: 'my_jaspr_site',
+      title: siteTitle,
+      // Overridden in CI Pages builds via --dart-define=BASE_PATH=flutter_jaspr_web.
+      base: siteBase,
       styles: [
         // Special import rule to include to another css file.
         css.import('https://fonts.googleapis.com/css?family=Roboto'),
