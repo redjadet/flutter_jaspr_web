@@ -1,5 +1,5 @@
-name: my_jaspr_site
-description: A new Jaspr project
+name: flutter_jaspr_web
+description: Static Jaspr demo with multi-page routing and an interactive client-side counter.
 version: 0.0.1
 
 environment:

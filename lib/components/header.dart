@@ -1,6 +1,5 @@
 import 'package:jaspr/dom.dart';
 import 'package:jaspr/jaspr.dart';
-import 'package:jaspr_router/jaspr_router.dart';
 
 import '../constants/theme.dart';
 
@@ -11,14 +10,16 @@ class Header extends StatelessComponent {
   Component build(BuildContext context) {
     var activePath = context.url;
 
+    // Relative hrefs resolve against <base>, so local (`/`) and GitHub Pages
+    // project-site (`/flutter_jaspr_web/`) builds both work with full page loads.
     return header([
       nav([
         for (var route in [
-          (label: 'Home', path: '/'),
-          (label: 'About', path: '/about'),
+          (label: 'Home', path: '/', href: './'),
+          (label: 'About', path: '/about', href: 'about'),
         ])
           div(classes: activePath == route.path ? 'active' : null, [
-            Link(to: route.path, child: Component.text(route.label)),
+            a(href: route.href, [Component.text(route.label)]),
           ]),
       ]),
     ]);
